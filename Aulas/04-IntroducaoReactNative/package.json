@@ -1,0 +1,16 @@
+{
+  "name": "04-introducaoreactnative",
+  "version": "1.0.0",
+  "description": "Aula 04 de mobile ",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sarah Evelyn",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "moment": "^2.30.1"
+  }
+}
