@@ -35,7 +35,7 @@ export default function App() {
 
         <FlatList
           data={lista}
-          keyExtractor={(item) => item.id} // Adicionado para evitar erros
+          keyExtractor={(item) => item.id} 
           renderItem={({ item }) => (
             <Card style={styles.card}>
               <Card.Content>
@@ -53,7 +53,7 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1, // Ajustado para ocupar toda a tela
+    flex: 1, 
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',

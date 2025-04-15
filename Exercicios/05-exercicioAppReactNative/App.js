@@ -84,7 +84,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 10,
   },
   textsubTitle: {
-    color: 'red',
+    color: 'yellow',
     fontSize: 16,
     fontWeight: 'bold',
   },
