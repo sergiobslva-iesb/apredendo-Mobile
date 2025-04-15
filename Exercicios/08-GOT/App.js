@@ -6,8 +6,8 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 
 // Telas
 import EscudoScreen from './Screens/EscudoScreen';
-import JogadoresScreen from './Screens/JogadoresScreen';
-import TitulosScreen from './Screens/TitulosScreen';
+import PersonagensScreen from './Screens/PersonagensScreen';
+import DragonsScreen from './Screens/DragonsScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -24,14 +24,13 @@ const App = () => {
                 case 'Escudo':
                   iconName = 'shield-outline';
                   break;
-                case 'Jogadores':
+                case 'Personagens':
                   iconName = 'people-outline';
                   break;
-                case 'Títulos':
+                case 'Dragons':
                   iconName = 'trophy-outline';
                   break;
-                default:
-                  iconName = 'ellipse-outline';
+               
               }
 
               return <Ionicons name={iconName} size={size} color={color} />;
@@ -44,17 +43,17 @@ const App = () => {
           <Tab.Screen
             name="Escudo"
             component={EscudoScreen}
-            options={{ title: 'Time' }}
+            options={{ title: 'House Targaryen' }}
           />
           <Tab.Screen
-            name="Jogadores"
-            component={JogadoresScreen}
-            options={{ title: 'Elenco' }}
+            name="Personagens"
+            component={PersonagensScreen}
+            options={{ title: 'Personagens' }}
           />
           <Tab.Screen
-            name="Títulos"
-            component={TitulosScreen}
-            options={{ title: 'Conquistas' }}
+            name="Dragons"
+            component={DragonsScreen}
+            options={{ title: 'Dragons' }}
           />
         </Tab.Navigator>
       </NavigationContainer>

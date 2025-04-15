@@ -3,8 +3,8 @@ import { View, Image, StyleSheet } from 'react-native';
 import { Text } from 'react-native-paper';
 
 const time = {
-  nome: 'Flamengo',
-  escudo: 'https://i.pinimg.com/236x/16/db/d2/16dbd20fd582e025dc54cc3fbd1839c9.jpg',
+  nome: 'House ',
+  escudo: 'https://i.pinimg.com/736x/cf/4b/3e/cf4b3ebca031001cd203a7afde134dc2.jpg',
 };
 
 const EscudoScreen = () => {

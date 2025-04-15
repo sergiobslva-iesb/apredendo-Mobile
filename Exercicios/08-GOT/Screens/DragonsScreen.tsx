@@ -4,24 +4,21 @@ import { Text, Card } from 'react-native-paper';
 
 const titulos = [
   {
-    nome: 'Campeonato Brasileiro',
-    anos: [1980, 1982, 1983, 1992, 2009, 2019, 2020],
+    nome: 'Drogon',
+    Caracteristicas: 'Preto com marcas vermelhas, o maior e mais agressivo dos três',
   },
   {
-    nome: 'Copa Libertadores da América',
-    anos: [1981, 2019, 2022],
+    nome: 'Rhaegal',
+    Caracteristicas: 'Verde com marcas de bronze, a montaria de Jon Snow',
   },
   {
-    nome: 'Copa do Brasil',
-    anos: [1990, 2006, 2013, 2022, 2024],
+    nome: 'Viserion',
+    Caracteristicas: 'Branco cremoso com marcas de ouro, a montaria de Daenerys',
   },
-  {
-    nome: 'Supercopa do Brasil',
-    anos: [2020, 2021, 2025],
-  },
+ 
 ];
 
-const TitulosScreen = () => {
+const DragonsScreen = () => {
   return (
     <FlatList
       data={titulos}
@@ -31,7 +28,7 @@ const TitulosScreen = () => {
         <Card style={styles.card}>
           <Card.Content>
             <Text variant="titleMedium">{item.nome}</Text>
-            <Text variant="bodyMedium">Anos: {item.anos.join(', ')}</Text>
+            <Text variant="bodyMedium">Caracteristicas: {item.Caracteristicas}</Text>
           </Card.Content>
         </Card>
       )}
@@ -48,4 +45,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default TitulosScreen;
+export default DragonsScreen;
